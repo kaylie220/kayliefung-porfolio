@@ -3,7 +3,7 @@ import { Merriweather } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Image from "next/image";
-import ActiveSectionContextProvider from "../../../my-app/context/active-section-context";
+import ActiveSectionContextProvider from "../../context/active-section-context";
 import { Toaster } from "react-hot-toast";
 
 const merriweather = Merriweather({
