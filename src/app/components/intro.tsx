@@ -101,10 +101,16 @@ export default function Intro() {
             <HiDownload className="opacity-60 group-hover:translate-y-3 transition" />
           </a>
           <div className="flex min-[320px]:flex gap-2">
-            <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack">
+            <a
+              href="https://www.linkedin.com/in/kaylie-fung-627365232/"
+              className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+            >
               <BsLinkedin />
             </a>
-            <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack">
+            <a
+              href="https://github.com/kaylie220"
+              className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+            >
               <BsGithub />
             </a>
           </div>
