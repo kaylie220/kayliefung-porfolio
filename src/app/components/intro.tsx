@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
+
 import { HiDownload } from "react-icons/hi";
 import { useActiveSectionContext } from "../../../context/active-section-context";
 import { useSectionInView } from "../../../lib/hook";
@@ -55,7 +56,7 @@ export default function Intro() {
             </motion.div>
           </div>
           <motion.div
-            className={`${lobster.className}text-base lg:text-[50px] font-medium leading-tight text-gray-700 sm:text-[40px] text-center lg:text-justify min-[320px]:text-[40px]`}
+            className={`${lobster.className}text-base lg:text-[50px] font-medium leading-tight text-gray-700 sm:text-[40px] lg:text-left sm:text-left lg:text-justify min-[320px]:text-[30px] min-[320px]:text-center`}
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -67,7 +68,9 @@ export default function Intro() {
           >
             Hello, I am <br />
             Kaylie Fung.
-            <p className={`${lobster.className}text-base lg:text-[17px]`}>
+            <p
+              className={`${lobster.className}text-base lg:text-[17px] sm:text-[14px] min-[375px]:text-[12px]`}
+            >
               Front-end Web Developer
             </p>
           </motion.div>

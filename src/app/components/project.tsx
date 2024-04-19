@@ -5,7 +5,8 @@ import { projectsData } from "../../../lib/data";
 import Image from "next/image";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
-import { BsArrowRight } from "react-icons/bs";
+
+import { PiCursorClickBold } from "react-icons/pi";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -39,10 +40,10 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
           <a
             href={url}
-            className="bg-orange-400 px-3 py-1 my-2 flex items-center gap-2 text-white rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-orange-800 active:scale-105 transition w-[8rem]"
+            className="bg-orange-400 px-3 py-1 my-2 flex items-center gap-3 text-white rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-orange-800 active:scale-105 transition w-[8rem]"
           >
             click here
-            <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
+            <PiCursorClickBold className="opacity-70 group-hover:-translate-x-2 transition" />
           </a>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
